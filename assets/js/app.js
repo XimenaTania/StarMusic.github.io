@@ -164,7 +164,7 @@ function cargarinfo(e) {
                 "playlist": "deporte",
                 "artista": "Boy",
                 "nombre": "Naughity boy lalala",
-                "url": "assets/music/deporte/NAUGHTY BOY LALALA.mp3",
+                "url": "assets/music/deporte/NAUGgiHTYBOYLALALA.mp3",
                 "duracion": 215
             },
             {

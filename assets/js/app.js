@@ -32,7 +32,31 @@ function cargarinfo(e) {
     let srcImg = "";
 
     if (e.target.classList.contains("playEstudiar")) {
-        jsonurl = "assets/musicJSON/estudiando.json";
+        jsonurl = [{
+                "id": 1,
+                "playlist": "estudiar",
+                "artista": "Mozart",
+                "nombre": "Lacrimosa",
+                "url": "assets/music/estudiar/1.God of War.mp3",
+                "duracion": 200
+            },
+            {
+                "id": 2,
+                "playlist": "estudiar",
+                "artista": "Mozart",
+                "nombre": "Symphony-40",
+                "url": "assets/music/estudiar/Coraline.mp3",
+                "duracion": 448
+            },
+            {
+                "id": 3,
+                "playlist": "estudiar",
+                "artista": "Mozart",
+                "nombre": "RondoAllaTurca",
+                "url": "assets/music/estudiar/Gilbert.mp3",
+                "duracion": 211
+            }
+        ];
         titlePlay = "Play List para estudiar ";
         descripcionPlay = "la mejor lista para estudiar ";
         srcImg = "assets/img/estudiar2.jpg";
@@ -158,19 +182,20 @@ function cargarinfo(e) {
         srcImg = "assets/img/rock1.jpg";
         album.style.background =
             "linear-gradient(to right, rgba(2,2,2,0.726)15%,rgba(8,8,8,0.829)), url(assets/img/rock1.jpg)";
+
     } else if (e.target.classList.contains("playDeporte")) {
         jsonurl = [{
                 "id": 1,
                 "playlist": "deporte",
-                "artista": "Boy",
+                "artista": "Cardio",
                 "nombre": "Naughity boy lalala",
-                "url": "assets/music/deporte/NAUGgiHTYBOYLALALA.mp3",
+                "url": "assets/music/deporte/NAUGHTYBOYLALALA.mp3",
                 "duracion": 215
             },
             {
                 "id": 1,
                 "playlist": "deporte",
-                "artista": "ROKY",
+                "artista": "Rocky",
                 "nombre": "Entrenamiento de Rocky",
                 "url": "assets/music/deporte/2-entrenamiento-rocki.mp3",
                 "duracion": 158
@@ -186,7 +211,7 @@ function cargarinfo(e) {
             {
                 "id": 1,
                 "playlist": "deporte",
-                "artista": "Boy",
+                "artista": "Trotar",
                 "nombre": "Naughity boy lalala",
                 "url": "assets/music/deporte/NAUGHTY BOY LALALA.mp3",
                 "duracion": 215
@@ -205,7 +230,7 @@ function cargarinfo(e) {
                 playlist: "Carnabalito",
                 artista: "Atajo",
                 nombre: "Hoja verde de la coca",
-                url: "assets/music/Carnabalito/AtajoHojaverde.mp3",
+                url: "assets/music/Carnabalito/AtajoHojaVerde.mp3",
                 duracion: 215,
             },
             {
@@ -230,6 +255,8 @@ function cargarinfo(e) {
         srcImg = "assets/img/carnabalito.jpeg";
         album.style.background =
             "linear-gradient(to right, rgba(2,2,2,0.726)15%,rgba(8,8,8,0.829)), url(assets/img/Carnavalito2.jpg)";
+
+
     } else if (e.target.classList.contains("playCristiana")) {
         jsonurl = [{
                 "id": 1,
@@ -250,7 +277,7 @@ function cargarinfo(e) {
             {
                 "id": 1,
                 "playlist": "Cristiana",
-                "artista": "Canto nuevo",
+                "artista": "Canto Nuevo",
                 "nombre": "Dios Supremo",
                 "url": "assets/music/Cristiana/CANTO_NUEVOBOLIVIA-DIOS_SUPREMO.mp3",
                 "duracion": 158
@@ -301,6 +328,8 @@ function cargarinfo(e) {
         srcImg = "assets/img/cristiana.jpg";
         album.style.background =
             "linear-gradient(to right, rgba(2,2,2,0.726)15%,rgba(8,8,8,0.829)), url(assets/img/cristi.jpg)";
+
+
     } else if (e.target.classList.contains("playCumbia")) {
         jsonurl = [{
                 "id": 1,
@@ -325,6 +354,30 @@ function cargarinfo(e) {
                 "nombre": "Lejos de Ti",
                 "url": "assets/music/cumbia/Soledad-LejosdeTi.mp3",
                 "duracion": 158
+            },
+            {
+                "id": 1,
+                "playlist": "cumbia",
+                "artista": "Soledad",
+                "nombre": "Tren al Cielo",
+                "url": "assets/music/cumbia/Soledad-LejosdeTi.mp3",
+                "duracion": 158
+            },
+            {
+                "id": 1,
+                "playlist": "cumbia",
+                "artista": "Rafaga",
+                "nombre": "Muero de frio",
+                "url": "assets/music/cumbia/Soledad-LejosdeTi.mp3",
+                "duracion": 158
+            },
+            {
+                "id": 1,
+                "playlist": "cumbia",
+                "artista": "Rafaga",
+                "nombre": "Cerveza",
+                "url": "assets/music/cumbia/Soledad-LejosdeTi.mp3",
+                "duracion": 158
             }
         ];
         titlePlay = "Play List para tus fiestas ";
@@ -332,18 +385,20 @@ function cargarinfo(e) {
         srcImg = "assets/img/cumbia2.jpg";
         album.style.background =
             "linear-gradient(to right, rgba(2,2,2,0.726)15%,rgba(8,8,8,0.829)), url(assets/img/cumbia.jpg)";
+
+
     } else if (e.target.classList.contains("playtodo")) {
         jsonurl = [{
                 "id": 1,
-                "playlist": "Carnabalito",
+                "playlist": "todo",
                 "artista": "Atajo",
                 "nombre": "Hoja verde de la coca",
-                "url": "assets/music/Carnabalito/AtajoHojaverde.mp3",
+                "url": "assets/music/Carnabalito/AtajoHojaVerde.mp3",
                 "duracion": 215
             },
             {
                 "id": 1,
-                "playlist": "Carnabalito",
+                "playlist": "todo",
                 "artista": "Atajo",
                 "nombre": "Pulga Presidente",
                 "url": "assets/music/Carnabalito/ATAJO-Pulga Presidente.mp3",
@@ -351,7 +406,7 @@ function cargarinfo(e) {
             },
             {
                 "id": 1,
-                "playlist": "Carnabalito",
+                "playlist": "todo",
                 "artista": "Tierra Alta",
                 "nombre": "Quiero",
                 "url": "assets/music/Carnabalito/Tierra Alta Quiero.mp3",
@@ -359,7 +414,7 @@ function cargarinfo(e) {
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Cala75",
                 "nombre": "Presiosa es tu palabra",
                 "url": "assets/music/Cristiana/Cala75.mp3",
@@ -367,55 +422,55 @@ function cargarinfo(e) {
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Canto Nuevo",
                 "nombre": "Te amo",
-                "url": "assets/music/Cristiana/CANTO NUEVO BOLIVIA - TE AMO.mp3",
+                "url": "assets/music/Cristiana/CANTO_NUEVOBOLIVIA-TEAMO.mp3",
                 "duracion": 158
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Canto nuevo",
                 "nombre": "Dios Supremo",
-                "url": "assets/music/Cristiana/CANTO NUEVO BOLIVIA - DIOS SUPREMO.mp3",
+                "url": "assets/music/Cristiana/CANTO_NUEVOBOLIVIA-DIOS_SUPREMO.mp3",
                 "duracion": 158
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Por Gracia",
                 "nombre": "Corona de Oro",
-                "url": "assets/music/Cristiana/Por Gracia CORONA DE ORO.mp3",
+                "url": "assets/music/Cristiana/PorGracia_CORONADEORO.mp3",
                 "duracion": 158
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Por Gracia",
                 "nombre": "Para que me diste vida",
-                "url": "assets/music/Cristiana/Por Gracia Para que me diste Vida.mp3",
+                "url": "assets/music/Cristiana/PorGraciaParaquemedisteVida.mp3",
                 "duracion": 158
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Por Gracia",
                 "nombre": "Te alabare",
-                "url": "assets/music/Cristiana/Por Gracia Popurry Te Alabare Jesus.mp3",
+                "url": "assets/music/Cristiana/PorGraciaPopurryTeAlabareJesus.mp3",
                 "duracion": 158
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Por Gracia",
                 "nombre": "Popurry",
-                "url": "assets/music/Cristiana/Por Gracia REMIX.mp3",
+                "url": "assets/music/Cristiana/PorGraciaREMIX.mp3",
                 "duracion": 158
             },
             {
                 "id": 1,
-                "playlist": "Cristiana",
+                "playlist": "todo",
                 "artista": "Himno",
                 "nombre": "Por que el vive",
                 "url": "assets/music/Cristiana/porq el vive.mp3",
@@ -423,7 +478,7 @@ function cargarinfo(e) {
             },
             {
                 "id": 1,
-                "playlist": "cumbia",
+                "playlist": "todo",
                 "artista": "Histeria",
                 "nombre": "Ya vives en mi",
                 "url": "assets/music/cumbia/HISTERIA YA NO VIVES EN MI.mp3 ",
@@ -431,7 +486,7 @@ function cargarinfo(e) {
             },
             {
                 "id": 1,
-                "playlist": "cumbia",
+                "playlist": "todo",
                 "artista": "Sabor Sabor",
                 "nombre": "Quien no lloro por amor",
                 "url": "assets/music/cumbia/Quien no lloro por amor Grupo Sabor Sabor.mp3",
@@ -439,12 +494,182 @@ function cargarinfo(e) {
             },
             {
                 "id": 1,
-                "playlist": "cumbia",
+                "playlist": "todo",
                 "artista": "Soledad",
                 "nombre": "Lejos de Ti",
                 "url": "assets/music/cumbia/Soledad-Lejos de Ti.mp3",
                 "duracion": 158
+            },
+            {
+                "id": 1,
+                "playlist": "todo",
+                "artista": "Boy",
+                "nombre": "Naughity boy lalala",
+                "url": "assets/music/deporte/NAUGHTY BOY LALALA.mp3",
+                "duracion": 215
+            },
+            {
+                "id": 1,
+                "playlist": "todo",
+                "artista": "ROKY",
+                "nombre": "Entrenamiento de Rocky",
+                "url": "assets/music/deporte/2-entrenamiento-rocki.mp3",
+                "duracion": 158
+            },
+            {
+                "id": 1,
+                "playlist": "todo",
+                "artista": "Boy",
+                "nombre": "Naughity boy lalala",
+                "url": "assets/music/deporte/NAUGHTY BOY LALALA.mp3",
+                "duracion": 215
+            },
+            {
+                "id": 1,
+                "playlist": "todo",
+                "artista": "Boy",
+                "nombre": "Naughity boy lalala",
+                "url": "assets/music/deporte/NAUGHTY BOY LALALA.mp3",
+                "duracion": 215
+            },
+            {
+                "id": 1,
+                "playlist": "todo",
+                "artista": "Mozart",
+                "nombre": "Lacrimosa",
+                "url": "assets/music/estudiar/1.God of War.mp3",
+                "duracion": 200
+            },
+            {
+                "id": 2,
+                "playlist": "todo",
+                "artista": "Mozart",
+                "nombre": "Symphony-40",
+                "url": "assets/music/estudiar/Coraline.mp3",
+                "duracion": 448
+            },
+            {
+                "id": 3,
+                "playlist": "todo",
+                "artista": "Mozart",
+                "nombre": "RondoAllaTurca",
+                "url": "assets/music/estudiar/Gilbert.mp3",
+                "duracion": 211
+            },
+            {
+                "id": 1,
+                "playlist": "todo",
+                "artista": "Atajo",
+                "nombre": "Hoja Verde",
+                "url": "assets/music/rock Nacional/Atajo-Hoja verde.mp3",
+                "duracion": 209
+            },
+            {
+                "id": 2,
+                "playlist": "todo",
+                "artista": "Alcoholika",
+                "nombre": "Celia",
+                "url": "assets/music/rock Nacional/Alcoholika-Celia.mp3",
+                "duracion": 344
+            },
+            {
+                "id": 3,
+                "playlist": "todo",
+                "artista": "Alcoholika",
+                "nombre": "Celia II",
+                "url": "assets/music/rock Nacional/Alcoholika La Christo-Celia.mp3",
+                "duracion": 198
+            },
+            {
+                "id": 4,
+                "playlist": "todo",
+                "artista": "Alcoholika & Lusmila Carpio",
+                "nombre": "WarmiKuna",
+                "url": "assets/music/rock Nacional/ALCOHOLIKA LA CHRISTO Warmikuna.mp3",
+                "duracion": 200
+            },
+            {
+                "id": 5,
+                "playlist": "todo",
+                "artista": "4 Non Blondes",
+                "nombre": "What`s Up",
+                "url": "assets/music/rock/5-Whats-up.mp3",
+                "duracion": 298
+            },
+
+            {
+                "id": 6,
+                "playlist": "todo",
+                "artista": "AC/DC",
+                "nombre": "Back In Black",
+                "url": "assets/music/rock/6-Back-In-Black.mp3",
+                "duracion": 254
+            },
+            {
+                "id": 7,
+                "playlist": "todo",
+                "artista": "Bon Jovi",
+                "nombre": "It`s My Life",
+                "url": "assets/music/rock/7-its-my-life.mp3",
+                "duracion": 267
+            },
+            {
+                "id": 8,
+                "playlist": "todo",
+                "artista": "Bon Jovi",
+                "nombre": "Always",
+                "url": "assets/music/rock/8-Always.mp3",
+                "duracion": 362
+            },
+            {
+                "id": 9,
+                "playlist": "todo",
+                "artista": "Guns And Roses",
+                "nombre": "November Rain",
+                "url": "assets/music/rock/9-november-rain.mp3",
+                "duracion": 547
+            },
+            {
+                "id": 10,
+                "playlist": "todo",
+                "artista": "Aerosmith",
+                "nombre": "Crazy",
+                "url": "https://open.spotify.com/track/6CIDsqMEEsBJf5Cv6RbuGw?si=DH3-lh-uRg6h5Sl3GMjDAQ",
+                "duracion": 375
+            },
+            {
+                "id": 11,
+                "playlist": "todo",
+                "artista": "Maroon 5",
+                "nombre": "Memories",
+                "url": "http://mus6.musicafm.club/mp3/3e28ac4f-5cf9-4343-b0ef-4f8d70caba8a.mp3",
+                "duracion": 375
+            },
+            {
+                "id": 12,
+                "playlist": "todo",
+                "artista": "The Outfield",
+                "nombre": "Your Love",
+                "url": "http://mus3.musicafm.club/mp3/e99df7dd-7dd6-459e-812f-4755739bd299.mp3",
+                "duracion": 216
+            },
+            {
+                "id": 13,
+                "playlist": "todo",
+                "artista": "AC/DC",
+                "nombre": "highway to hell",
+                "url": "http://mus1.musicafm.club/mp3/7396d6e2-085f-450c-9560-51ee75ae3b48.mp3",
+                "duracion": 252
+            },
+            {
+                "id": 14,
+                "playlist": "todo",
+                "artista": "A ha",
+                "nombre": "Take On Me !!!",
+                "url": "assets/music/rock/14-take-on-me.mp3",
+                "duracion": 252
             }
+
         ];
         titlePlay = "Todas las canciones juntas ";
         descripcionPlay = "Disfruta ";

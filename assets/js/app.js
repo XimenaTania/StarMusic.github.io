@@ -8,14 +8,14 @@ const album = document.getElementById("album");
 const btnReaccion = document.getElementById("reaccion");
 
 //eventos
-btnReaccion.addEventListener("click", likear);
+btnReaccion.addEventListener("click", clikear);
 menuMusic.addEventListener("click", cargarinfo);
 contenedorListaMusic.addEventListener("click", reproducirMusica);
 controles.addEventListener("click", controlar);
 //funcion
 let estado = 0;
 
-function likear() {
+function clikear() {
     if (estado == 0) {
         btnReaccion.classList.add("reaccion-activa");
         estado = 1;

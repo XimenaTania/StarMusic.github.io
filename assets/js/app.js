@@ -30,7 +30,7 @@ function cargarinfo(e) {
     let titlePlay = "";
     let descripcionPlay = "";
     let srcImg = "";
-
+    console.log(e.target);
     if (e.target.classList.contains("playEstudiar")) {
         jsonurl = [{
                 "id": 1,

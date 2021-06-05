@@ -8,7 +8,7 @@ const album = document.getElementById("album");
 const btnReaccion = document.getElementById("reaccion");
 
 //eventos
-btnReaccion.addEventListener("click", clikear);
+btnReaccion.addEventListener('click', clikear)
 menuMusic.addEventListener("click", cargarinfo);
 contenedorListaMusic.addEventListener("click", reproducirMusica);
 controles.addEventListener("click", controlar);
@@ -16,7 +16,7 @@ controles.addEventListener("click", controlar);
 let estado = 0;
 
 function clikear() {
-    if (estado == 0) {
+    if (estado === 0) {
         btnReaccion.classList.add("reaccion-activa");
         estado = 1;
     } else if (estado === 1) {

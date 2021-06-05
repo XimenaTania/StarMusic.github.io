@@ -16,7 +16,7 @@ controles.addEventListener("click", controlar);
 let estado = 0;
 
 function likear() {
-    if (estado == 0) {
+    if (estado === 0) {
         btnReaccion.classList.add("reaccion-activa");
         estado = 1;
     } else if (estado === 1) {
